@@ -7,7 +7,7 @@ describe("Input component", () => {
     expect(Enzyme.length(component)) |> toBe(1);
   });
 
-  test("renders input element", () => {
+  test("renders an input element", () => {
     let component = <Input _type="text" name="foo" /> |> Enzyme.shallow;
     expect(Enzyme.type_(component)) |> toBe("input");
   });
