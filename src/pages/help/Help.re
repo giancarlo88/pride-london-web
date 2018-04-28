@@ -5,6 +5,7 @@ let make = _children => {
     render: _self =>
         <div>
             <Title title="Help" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
+            <QuestionForm />
         </div>
 };
 
