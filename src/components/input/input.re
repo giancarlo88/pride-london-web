@@ -1,8 +1,8 @@
 
 let component = ReasonReact.statelessComponent("Input");
 
-let make = (~_type, ~name, _children) => {
+let make = (~inputType, ~name, ~handleChange, _children) => {
   ...component,
-  render: _self =>
-    <input _type=_type name=name />,
+  render: self =>
+    <input _type=inputType name=name onChange=handleChange/>,
 };
